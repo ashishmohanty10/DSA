@@ -48,14 +48,6 @@ function pattern3(n) {
 
 pattern3(5);
 
-// for (let i = 1; i <= 5; i++) {
-//   let row = "";
-//   for (let j = 0; j >= i; j++) {
-//     row += j;
-//   }
-//   console.log(row);
-// }
-
 //  1
 //  2 2
 //  3 3 3
@@ -77,3 +69,38 @@ pattern4(5);
 // * * *
 // * *
 // *
+
+function pattern5(n) {
+  for (let i = n; i >= 0; i--) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += "*";
+    }
+    console.log(row);
+  }
+}
+
+pattern5(5);
+
+// 1 2 3 4 5
+// 1 2 3 4
+// 1 2 3
+// 1 2
+// 1
+
+function pattern6(n) {
+  for (let i = n; i >= 0; i--) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += j;
+    }
+    console.log(row);
+  }
+}
+
+pattern6(7);
+
+//     *
+//   * * *
+//  * * * * *
+// * * * * * * *
