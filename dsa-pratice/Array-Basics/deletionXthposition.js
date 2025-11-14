@@ -1,6 +1,5 @@
 // deletion at Xth Position
-//
-//
+
 
 
 function deleteElementAtIndex(nums, n, X) {
